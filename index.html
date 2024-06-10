@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="main-container">
+        <p>
+            O, for a muse of fire that would ascend
+The brightest heaven of invention!
+A kingdom for a stage, princes to act,
+And monarchs to behold the swelling scene!
+Then should the warlike Harry, like himself,
+Assume the port of Mars, and at his heels,
+Leashed in like hounds, should famine, sword, and
+fire
+Crouch for employment. But pardon, gentles all,
+The flat unraisèd spirits that hath dared
+On this unworthy scaffold to bring forth
+So great an object. Can this cockpit hold
+The vasty fields of France? Or may we cram
+Within this wooden O the very casques
+That did affright the air at Agincourt?
+O pardon, since a crookèd figure may
+Attest in little place a million,
+And let us, ciphers to this great account,
+On your imaginary forces work.
+Suppose within the girdle of these walls
+Are now confined two mighty monarchies,
+Whose high uprearèd and abutting fronts
+        </p>
+        <button>
+            click me
+        </button>
+        <dialog>
+            <span id="close-modal">close</span>
+            <div id="modal-container">
+                <p>I am a modal!</p> 
+            </div>
+        </dialog>
+    </div>
+</body>
+<script>
+    document.querySelector('button').addEventListener('click', () => {
+        document.querySelector('dialog').showModal();
+    });
+
+    document.querySelector('#close-modal').addEventListener('click', () =>{
+        document.querySelector('dialog').close();
+    });
+</script>
+</html>
